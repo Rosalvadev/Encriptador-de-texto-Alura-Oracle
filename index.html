@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <title>Challenge Encriptador de texto</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <img class="logo" src="Imagenes/Logo.svg" alt="logo de alura con la inicial a">
+        <h1 class="encabezado-titulo">ENCRIPTADOR</h1>
+    </header>
+    <main>
+        <section class="contenedor1">
+            <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="informacion">
+                <img src="Imagenes/Vector.svg" alt="alerta">
+                <h6 class="minusculas">Sólo letras minúsculas y sin acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar(); mostrarImage();">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="mensaje-box">
+            <div class="mensaje-encriptado no-mostrar">
+                <textarea class="mensaje" cols="30" rows="10"></textarea>
+                <div class="contenedor-copiar">
+                    <button class="btn-copiar" onclick="btncopiar()">Copiar</button>
+                </div>
+            </div>
+            <div class="mensaje-no-encontrado">
+                <img src="Imagenes/Muñeco.svg">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+     </main>   
+    <footer>
+        <ul class="redes">
+            <li>
+                <a href="https://github.com/Rosalvadev" target="_blank" class="github"></a>
+            </li>
+        </ul>
+        <p class="rodapie">Challenge ONE ORACLE<span>-Rosmery Alva G.</span></p> 
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
