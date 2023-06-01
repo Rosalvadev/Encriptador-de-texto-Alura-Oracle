@@ -17,7 +17,7 @@
 <body>
     <header class="encabezado">
         <img class="logo" src="Imagenes/Logo.svg" alt="logo de alura con la inicial a">
-        <h1 class="encabezado-titulo">ENCRIPTADOR</h1>
+        <h1 class="encabezado-titulo">ENCRIPTADOR DE TEXTO</h1>
     </header>
     <main>
         <section class="contenedor1">
@@ -27,15 +27,15 @@
                 <h6 class="minusculas">Sólo letras minúsculas y sin acentos.</h6>
             </div>
             <div class="botones">
-                <button class="btn-encriptar" onclick="btnEncriptar(); mostrarImage();">Encriptar</button>
+                <button class="btn-encriptar" onclick="btnEncriptar(); ocultarImage();">Encriptar</button>
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
         <section class="mensaje-box">
             <div class="mensaje-encriptado no-mostrar">
-                <textarea class="mensaje" cols="30" rows="10"></textarea>
+                <textarea class="mensaje" readonly></textarea>
                 <div class="contenedor-copiar">
-                    <button class="btn-copiar" onclick="btncopiar()">Copiar</button>
+                    <button class="btn-copiar" id="btncopiar">Copiar</button>
                 </div>
             </div>
             <div class="mensaje-no-encontrado">
@@ -48,10 +48,11 @@
     <footer>
         <ul class="redes">
             <li>
-                <a href="https://github.com/Rosalvadev" target="_blank" class="github"></a>
+                <a clas="github" href="https://github.com/Rosalvadev" target="_blank">
+                <img src="Imagenes/icons8-github.svg" alt="github-icon"></a>
+                <p class="rodapie">Elaborado por Rosmery Alva G.</p> 
             </li>
         </ul>
-        <p class="rodapie">Challenge ONE ORACLE<span>-Rosmery Alva G.</span></p> 
     </footer>
     <script src="/script.js"></script>
 </body>

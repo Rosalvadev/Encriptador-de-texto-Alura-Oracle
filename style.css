@@ -1,12 +1,12 @@
 *{
-    font-family: "Inter",sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    box-sizing: border-box;
 }
 
 .logo{
-    padding-top:10px;
+    padding-top: 10px;
     margin-left: 10px;
     width: 10%;
 }
@@ -14,12 +14,16 @@
 .encabezado-titulo{
     text-align: center;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 65px;
+    font-style: oblique;
     color:#0a3871;
+    text-shadow: 3px 3px 1px pink,5px 5px 2px blueviolet,8px 8px 3px whitesmoke;
+    letter-spacing: 8px;
 }
 
 body{
     background: linear-gradient(#ffc0cb, #0a3871);
+    font-family: "Inter Tight", sans-serif;
 }
 
 main{
@@ -58,7 +62,8 @@ main{
 
 .informacion h6{
     font-size: 1rem;
-    color:#e9c6cc;
+    color:#ffffff;
+    
 }
 
 .informacion img{
@@ -66,20 +71,30 @@ main{
 }
 
 .mensaje-box{
-    background:#ffc0cb;
+    background:#e9c6cc; 
     background-repeat:no-repeat;
     border:none;
     border-radius: 24px;
     Color:#0a3871;
-    margin-left:98px;
-    margin-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
     max-width: 25vw;
+    width: 100%;    
+}
+
+.mensaje-encriptado{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .mensaje{
     background: transparent;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
 }
+
 .mensaje:focus{
     outline:none;}
 
@@ -118,6 +133,7 @@ main{
     font-weight: bolder;
 }
 
+
 .btn-desencriptar{
     background-color: #ffc0cb;
     border:1px solid #ffffff;
@@ -136,10 +152,7 @@ main{
     color:#ffc0cb;
     cursor:pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
-    position: absolute;
-    width: 336px;
+    width: 100%;
     font-weight: bolder;
 }
 
@@ -150,7 +163,11 @@ main{
 footer{
     width: 100%;
     padding: 1rem;
-    color:#ffffff;
+    color:#f37f93;
+    text-shadow: 1px 1px 2px white;
+    justify-content: center;
     text-align: center;
-
+    font-size: 28px;
+    gap: 12px;
 }
+ 
