@@ -1,7 +1,6 @@
 *{
     font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+    /*line-height: 150%;*/
     box-sizing: border-box;
 }
 
@@ -14,7 +13,7 @@
 .encabezado-titulo{
     text-align: center;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 30px;
     font-style: oblique;
     color:#0a3871;
     text-shadow: 3px 3px 1px pink,5px 5px 2px blueviolet,8px 8px 3px whitesmoke;
@@ -29,10 +28,14 @@ body{
 main{
     display: flex;
     padding: 5% 2rem;
-    justify-content: space-evenly;
+    gap:3rem;
+    justify-content: center;
 }
 
 .contenedor1{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
     max-width: 35vw;
     width: 100%;
 
@@ -41,14 +44,14 @@ main{
 .text-area{
     border:none;
     color:#0a3871;
-    margin-top: 90px;
     text-transform: lowercase;
     background: #e9c6cc;
     width: 100%;
     resize: none;
     border-radius: 24px;
-    padding: 1rem;
-    min-height: 50vh;
+    padding:1rem;
+    font-size: 1.2rem;
+    height: 300px;
 }
 ::placeholder{color:#0a3871;}
 .text-area:focus{
@@ -61,7 +64,7 @@ main{
 }
 
 .informacion h6{
-    font-size: 1rem;
+    font-size: 0.8rem;
     color:#ffffff;
     
 }
@@ -78,7 +81,8 @@ main{
     Color:#0a3871;
     padding: 20px;
     max-width: 25vw;
-    width: 100%;    
+    width: 100%;
+    height: 396px;    
 }
 
 .mensaje-encriptado{
@@ -105,9 +109,11 @@ main{
     align-items: center;
     text-align: center;
     height: 100%;
+    gap:1.5rem;
 }
 
 .mensaje-no-encontrado img{
+    
     max-width: 65%;
 }
 
@@ -117,7 +123,6 @@ main{
 }
 .botones{
     display: flex;
-    margin-top:18px;
     gap: 1rem;
     width: 100%;
 }
@@ -128,7 +133,7 @@ main{
     border-radius:24px;
     color:#ffc0cb;
     cursor:pointer;
-    height: 67px;
+    /*padding: 1rem 2rem;*/
     width: 50%;
     font-weight: bolder;
 }
@@ -140,7 +145,6 @@ main{
     border-radius:24px;
     color:#0a3871;
     cursor:pointer;
-    height: 67px;
     width: 50%;
     font-weight: bolder;
 }
@@ -151,7 +155,6 @@ main{
     border-radius: 24px;
     color:#ffc0cb;
     cursor:pointer;
-    height: 67px;
     width: 100%;
     font-weight: bolder;
 }
@@ -168,6 +171,23 @@ footer{
     justify-content: center;
     text-align: center;
     font-size: 28px;
-    gap: 12px;
+    gap: 3rem;
 }
  
+/*botones*/
+.boton{
+    padding: 1rem;
+}
+ .redes li{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+ }
+ .redes li img{
+animation: 2s girar infinite;    
+}
+
+@keyframes girar { 
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}

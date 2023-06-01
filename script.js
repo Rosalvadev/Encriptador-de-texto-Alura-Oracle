@@ -40,9 +40,8 @@ function btnDesencriptar(){
     textArea.value ="";
 }
 
-
 function desencriptar(stringDesencriptada){
-    let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]]
+    let matrizCodigo = [["enter","e"],["imes","i"],["ai","a"],["ober","o"],["ufat","u"]]
     stringDesencriptada = stringDesencriptada.toLowerCase()
 
     for(let i=0; i< matrizCodigo.length;i++){
@@ -52,14 +51,11 @@ function desencriptar(stringDesencriptada){
     }   
     return stringDesencriptada 
 }
+
 const btncopiar = document.getElementById("btncopiar")
 
-function btnCopiar(){
-    console.log("aleluya")
-   mensaje.Selected();
-   navigator.clipboard.writeText(mensaje.value)
-   mensaje.value="";
-   alert("Texto Copiado")
+const btnCopiar = () => {
+    navigator.clipboard.writeText(mensaje.value)
 }
 
-btncopiar.addEventListener("click", btncopiar)
+btncopiar.addEventListener("click", btnCopiar)
